@@ -1,8 +1,4 @@
-
-
-
 void setup() {
-
   // setup-Funktionen der Tasks ausrufen, wenn nötig
   task1_setup();
   task2_setup();
@@ -21,7 +17,5 @@ void setup() {
 }
 
 void loop() {
-
   callTasks(); 
-
 }

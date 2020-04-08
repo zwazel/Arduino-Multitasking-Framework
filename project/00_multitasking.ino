@@ -16,8 +16,6 @@
 
 #define maxTasks 100
 
- 
-
 typedef int (*FunctionCallback)(int,int);
 FunctionCallback tasks[maxTasks];
 
@@ -28,12 +26,10 @@ unsigned long lasttick = millis();              // marker für die Erzeugung des
 int waitticks[maxTasks];                        // speichert die zu wartenden ticks, bis ein Task erneut aufgerufen wird
 int states[maxTasks];                           // speichert die aktuellen states der Tasks 
 
-
 void setState(int tasknr,int state)
 {
   states[tasknr]=state;
 }
-
 
 void callTasks()
 {
@@ -54,6 +50,4 @@ void callTasks()
       }
       
     }
-
-
 }
